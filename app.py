@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.secret_key = '3333'  # Change to a secure secret key in production
 
 # Set a password for WiFi authentication
-WIFI_PASSWORD = "industrix"
+WIFI_PASSWORD = "3333"
 
 # Define a configuration file to store flowmeter settings
 FLOWMETER_CONFIG_FILE = "flowmeter_config.json"
@@ -166,4 +166,4 @@ def get_liters():
     return jsonify({"liters": get_liters_flowed()})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3334)
+    app.run(host='0.0.0.0', port=3333)
